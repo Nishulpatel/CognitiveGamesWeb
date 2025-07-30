@@ -3,7 +3,7 @@
 
 import ReactLenis from 'lenis/react';
 import { ViewTransitions } from 'next-view-transitions';
-import Providers from '@/components/common/Providers';
+// import Providers from '@/components/common/Providers';
 import './globals.css';
 
 import Header from '@/components/common/Header';
@@ -17,13 +17,13 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang="en" suppressHydrationWarning>
-        <body className="font-hanken-grotesk antialiased">
-          <Providers>
+        <body className="font-hanken-grotesk antialiased bg-[#efe9d5]">
+          {/* <Providers> */}
             <ReactLenis root>
                   <Header />
               {children}
             </ReactLenis>
-          </Providers>
+          {/* </Providers> */}
         </body>
       </html>
     </ViewTransitions>
