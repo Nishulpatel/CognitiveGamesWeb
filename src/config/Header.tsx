@@ -15,5 +15,9 @@ export const navbarConfig = {
       label: 'Home',
       href: '/',
     },
+     {
+      label: 'Contact',
+      href: 'https://www.nishul.dev/',
+    },
   ] as NavItem[],
 };

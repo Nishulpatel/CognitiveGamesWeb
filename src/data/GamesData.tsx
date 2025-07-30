@@ -16,7 +16,7 @@ export const gameCards: GameCardData[] = [
   },
    {
     id: 2,
-    name: "Swith Challenge",
+    name: "Swich Challenge",
     image: "/games/Swithchallenge.jpeg",
 
     rulesLink: "/rules/Swith-challenge",
