@@ -1,15 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/games/(capgemini)/Deductivechallenge/page": "app/games/(capgemini)/Deductivechallenge/page.js",
-  "/games/(capgemini)/Gridchallenge/page": "app/games/(capgemini)/Gridchallenge/page.js",
-  "/games/(capgemini)/Motionchallenge/page": "app/games/(capgemini)/Motionchallenge/page.js",
-  "/games/(capgemini)/Switchchallenge/page": "app/games/(capgemini)/Switchchallenge/page.js",
-  "/rules/Grid-Challenge/page": "app/rules/Grid-Challenge/page.js",
-  "/page": "app/page.js",
-  "/rules/Inductive-Challenge/page": "app/rules/Inductive-Challenge/page.js",
-  "/games/(capgemini)/Inductivechallenge/page": "app/games/(capgemini)/Inductivechallenge/page.js",
-  "/rules/Swith-challenge/page": "app/rules/Swith-challenge/page.js",
-  "/rules/Motion-Challenge/page": "app/rules/Motion-Challenge/page.js",
-  "/rules/deductive-challenge/page": "app/rules/deductive-challenge/page.js"
+  "/page": "app/page.js"
 }
