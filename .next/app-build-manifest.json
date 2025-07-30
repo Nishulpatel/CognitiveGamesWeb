@@ -1,20 +1,99 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/_not-found/page-70568c5feab87095.js"
     ],
-    "/rules/deductive-challenge/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/rules/deductive-challenge/page.js"
+    "/layout": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/css/19dcbf6100e4dfe9.css",
+      "static/chunks/749-b0d593e6c7c615b5.js",
+      "static/chunks/app/layout-6d256a8ec59d2738.js"
     ],
     "/games/(capgemini)/Deductivechallenge/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/games/(capgemini)/Deductivechallenge/page.js"
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/games/(capgemini)/Deductivechallenge/page-7948a2ced6b352a7.js"
+    ],
+    "/games/(capgemini)/Gridchallenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/games/(capgemini)/Gridchallenge/page-a21738f4e8115627.js"
+    ],
+    "/games/(capgemini)/Motionchallenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/games/(capgemini)/Motionchallenge/page-43769dcf389510a0.js"
+    ],
+    "/games/(capgemini)/Switchchallenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/games/(capgemini)/Switchchallenge/page-16d68ac7c55e70ec.js"
+    ],
+    "/rules/Grid-Challenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/rules/Grid-Challenge/page-5dd842338c4be7ad.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/749-b0d593e6c7c615b5.js",
+      "static/chunks/707-334e8f7182c61585.js",
+      "static/chunks/app/page-5f3d47c6e0233f8e.js"
+    ],
+    "/rules/Inductive-Challenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/rules/Inductive-Challenge/page-5dd842338c4be7ad.js"
+    ],
+    "/games/(capgemini)/Inductivechallenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/games/(capgemini)/Inductivechallenge/page-76c0c68c9780b380.js"
+    ],
+    "/rules/Swith-challenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/rules/Swith-challenge/page-5dd842338c4be7ad.js"
+    ],
+    "/rules/Motion-Challenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/rules/Motion-Challenge/page-5dd842338c4be7ad.js"
+    ],
+    "/rules/deductive-challenge/page": [
+      "static/chunks/webpack-4f191c93abe1e1de.js",
+      "static/chunks/b54b8a9f-76cbc0966af4c545.js",
+      "static/chunks/766-b4e8366ae8f16f9b.js",
+      "static/chunks/main-app-f78e19f7883d1793.js",
+      "static/chunks/app/rules/deductive-challenge/page-5dd842338c4be7ad.js"
     ]
   }
 }
