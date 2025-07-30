@@ -1,0 +1,5 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/rules/deductive-challenge/page": "app/rules/deductive-challenge/page.js",
+  "/games/(capgemini)/Deductivechallenge/page": "app/games/(capgemini)/Deductivechallenge/page.js"
+}
