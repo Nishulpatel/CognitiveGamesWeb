@@ -25,7 +25,7 @@ function applyOperator(input: Symbol[], operator: number[]): Symbol[] {
 export function generateSwitchPuzzle(level: number): SwitchPuzzle {
   const layers = level < 3 ? 1 : 2; // Adaptive difficulty
   const input = shuffle(SYMBOLS).slice(0, 4);
-  let operator1 = randomOperator();
+  const operator1 = randomOperator();
   let output = applyOperator(input, operator1);
 
   let operator2: number[] | null = null;
@@ -35,7 +35,7 @@ export function generateSwitchPuzzle(level: number): SwitchPuzzle {
   }
 
   // Generate options (correct + 3 wrong)
-  let correctOperator = layers === 1 ? operator1 : operator2!;
+  const correctOperator = layers === 1 ? operator1 : operator2!;
   let options: number[][] = [correctOperator];
   while (options.length < 4) {
     const op = randomOperator();
