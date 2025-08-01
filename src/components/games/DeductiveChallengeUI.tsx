@@ -1,5 +1,6 @@
 import React from "react";
 import { Puzzle, Symbol as GameSymbol } from "@/types/game";
+import { Button } from "../ui/button";
 
 interface DeductiveChallengeUIProps {
   puzzle: Puzzle | null;
@@ -36,32 +37,32 @@ const DeductiveChallengeUI: React.FC<DeductiveChallengeUIProps> = ({
     <>
       {gameStatus === "results" ? (
         <div className="text-center space-y-8">
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/50">
-            <h2 className="text-3xl font-bold text-gray-800 mb-8">Session Complete!</h2>
+          <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl 	p-4 md:p-8 border border-white/50">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-8">Session Complete!</h2>
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="bg-emerald-50 p-6 rounded-2xl border-2 border-emerald-200 shadow-lg">
                 <div className="text-emerald-600 text-sm font-semibold mb-2">Correct</div>
-                <div className="text-3xl font-bold text-emerald-700">{correct}</div>
+                <div className="text-xl md:text-3xl font-bold text-emerald-700">{correct}</div>
               </div>
               <div className="bg-rose-50 p-6 rounded-2xl border-2 border-rose-200 shadow-lg">
                 <div className="text-rose-600 text-sm font-semibold mb-2">Wrong</div>
-                <div className="text-3xl font-bold text-rose-700">{wrong}</div>
+                <div className="text-xl md:text-3xl font-bold text-rose-700">{wrong}</div>
               </div>
               <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200 shadow-lg">
                 <div className="text-slate-600 text-sm font-semibold mb-2">Total</div>
-                <div className="text-3xl font-bold text-slate-700">{correct + wrong}</div>
+                <div className="text-xl md:text-3xl font-bold text-slate-700">{correct + wrong}</div>
               </div>
             </div>
-            <button
+            <Button
               onClick={resetGame}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg transition-all duration-200 transform hover:scale-105"
+             variant={"outline"}
             >
               Play Again
-            </button>
+            </Button>
           </div>
         </div>
       ) : (
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 relative border border-white/50">
+        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl 	p-4 md:p-8 relative border border-white/50">
           {/* Enhanced instruction */}
           <div className="text-center mb-8">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Find the Missing Symbol</h3>
@@ -91,7 +92,7 @@ const DeductiveChallengeUI: React.FC<DeductiveChallengeUIProps> = ({
           {/* Enhanced Grid */}
           {puzzle && (
             <div className="mb-10 flex justify-center">
-              <div className="grid gap-3 p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border-2 border-slate-200 shadow-inner" 
+              <div className="grid gap-6 md:gap-3 p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl border-2 border-slate-200 shadow-inner" 
                    style={{ gridTemplateColumns: `repeat(${puzzle.grid.length}, minmax(0, 1fr))` }}>
                 {puzzle.grid.map((row, rIdx) =>
                   row.map((cell, cIdx) => {
@@ -99,7 +100,7 @@ const DeductiveChallengeUI: React.FC<DeductiveChallengeUIProps> = ({
                       return (
                         <div
                           key={`${rIdx}-${cIdx}`}
-                          className="w-14 h-14 flex items-center justify-center text-3xl rounded-xl font-bold shadow-lg border-3 border-blue-400 bg-gradient-to-br from-blue-100 to-blue-200 text-blue-500 animate-pulse"
+                          className="	w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl rounded-xl font-bold shadow-lg border-3 border-blue-400 bg-gradient-to-br from-blue-100 to-blue-200 text-blue-500 animate-pulse"
                         >
                           ?
                         </div>
@@ -108,7 +109,7 @@ const DeductiveChallengeUI: React.FC<DeductiveChallengeUIProps> = ({
                       return (
                         <div
                           key={`${rIdx}-${cIdx}`}
-                          className="w-14 h-14 flex items-center justify-center text-3xl rounded-xl font-bold shadow-md border-2 border-slate-300 bg-gradient-to-br from-slate-200 to-slate-300 opacity-60"
+                          className="	w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl rounded-xl font-bold shadow-md border-2 border-slate-300 bg-gradient-to-br from-slate-200 to-slate-300 opacity-60"
                         >
                         </div>
                       );
@@ -116,7 +117,7 @@ const DeductiveChallengeUI: React.FC<DeductiveChallengeUIProps> = ({
                       return (
                         <div
                           key={`${rIdx}-${cIdx}`}
-                          className="w-14 h-14 flex items-center justify-center text-3xl rounded-xl font-bold shadow-lg border-2 border-slate-300 bg-gradient-to-br from-white to-slate-50 text-slate-700 hover:shadow-xl transition-all duration-200"
+                          className="	w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl rounded-xl font-bold shadow-lg border-2 border-slate-300 bg-gradient-to-br from-white to-slate-50 text-slate-700 hover:shadow-xl transition-all duration-200"
                         >
                           {cell}
                         </div>
@@ -136,7 +137,7 @@ const DeductiveChallengeUI: React.FC<DeductiveChallengeUIProps> = ({
                     key={`${option}-${idx}`}
                     onClick={() => handleSelect(option)}
                     disabled={isAnswered}
-                    className={`h-16 text-2xl rounded-2xl font-bold shadow-lg border-2 transition-all duration-200 transform ${
+                    className={`h-12 md:h-16 text-lg md:text-2xl rounded-2xl font-bold shadow-lg border-2 transition-all duration-200 transform ${
                       selected === option && isAnswered
                         ? isCorrect
                           ? "bg-gradient-to-r from-emerald-200 to-emerald-300 border-emerald-400 text-emerald-800 shadow-xl"

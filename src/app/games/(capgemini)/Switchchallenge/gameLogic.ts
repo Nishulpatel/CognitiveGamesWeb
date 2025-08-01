@@ -8,22 +8,20 @@ export interface SwitchPuzzle extends Puzzle {
   output: Symbol[];
   operators: number[][];
   correctOperatorIndex: number;
-  layers: number; // 1 or 2
-  options: string[]; // Add this line for linter compatibility
+  layers: number; 
+  options: string[]; 
 }
 
 function randomOperator(): number[] {
-  // Returns a random permutation of [1,2,3,4]
   return shuffle([1, 2, 3, 4]);
 }
 
 function applyOperator(input: Symbol[], operator: number[]): Symbol[] {
-  // operator: e.g. [3,1,4,2] means output[0]=input[2], output[1]=input[0], etc.
   return operator.map(idx => input[idx - 1]);
 }
 
 export function generateSwitchPuzzle(level: number): SwitchPuzzle {
-  const layers = level < 3 ? 1 : 2; // Adaptive difficulty
+  const layers = level < 8 ? 1 : 2; 
   const input = shuffle(SYMBOLS).slice(0, 4);
   const operator1 = randomOperator();
   let output = applyOperator(input, operator1);
@@ -33,8 +31,6 @@ export function generateSwitchPuzzle(level: number): SwitchPuzzle {
     operator2 = randomOperator();
     output = applyOperator(output, operator2);
   }
-
-  // Generate options (correct + 3 wrong)
   const correctOperator = layers === 1 ? operator1 : operator2!;
   let options: number[][] = [correctOperator];
   while (options.length < 4) {
@@ -44,11 +40,11 @@ export function generateSwitchPuzzle(level: number): SwitchPuzzle {
   options = shuffle(options);
 
   return {
-    grid: [], // not used
+    grid: [], 
     emptyCells: [],
     targetCell: { row: 0, col: 0 },
     answer: correctOperator.map(String).join(" "),
-    options: options.map(op => op.map(String).join(" ")), // string[]
+    options: options.map(op => op.map(String).join(" ")), 
     input,
     output,
     operators: layers === 1 ? [] : [operator1],

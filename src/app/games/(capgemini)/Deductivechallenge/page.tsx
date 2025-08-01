@@ -20,7 +20,6 @@ export default function DeductiveChallenge() {
   const [sessionTime, setSessionTime] = useState<number>(SESSION_TIME);
   const [gameStatus, setGameStatus] = useState<'playing' | 'results'>("playing");
 
-  // Generate puzzle on mount/level
   useEffect(() => {
     const newPuzzle = generatePuzzle(level);
     setPuzzle(newPuzzle);
@@ -30,7 +29,6 @@ export default function DeductiveChallenge() {
     setTimeLeft(TIME_PER_QUESTION);
   }, [level]);
 
-  // Per-question timer
   useEffect(() => {
     if (gameStatus !== "playing" || isAnswered) return;
     if (timeLeft <= 0) {
@@ -46,7 +44,6 @@ export default function DeductiveChallenge() {
     return () => clearTimeout(t);
   }, [timeLeft, isAnswered, gameStatus]);
 
-  // Session timer
   useEffect(() => {
     if (gameStatus !== "playing") return;
     if (sessionTime <= 0) {
@@ -57,7 +54,6 @@ export default function DeductiveChallenge() {
     return () => clearTimeout(t);
   }, [sessionTime, gameStatus]);
 
-  // Handle answer
   const handleSelect = (symbol: GameSymbol) => {
     if (isAnswered || !puzzle) return;
     setSelected(symbol);
@@ -74,7 +70,6 @@ export default function DeductiveChallenge() {
     }, 1200);
   };
 
-  // Reset game
   const resetGame = () => {
     setLevel(1);
     setCorrect(0);
@@ -83,7 +78,6 @@ export default function DeductiveChallenge() {
     setGameStatus("playing");
   };
 
-  // Format time mm:ss
   const formatTime = (t: number) => `${String(Math.floor(t / 60)).padStart(2, "0")}:${String(t % 60).padStart(2, "0")}`;
 
   return (

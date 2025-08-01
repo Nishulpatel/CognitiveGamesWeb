@@ -7,7 +7,7 @@ import { ViewTransitions } from 'next-view-transitions';
 import './globals.css';
 
 import Header from '@/components/common/Header';
-import Footer from '@/components/common/Footer';
+
 
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
             <ReactLenis root>
                   <Header />
               {children}
-              <Footer />
+  
             </ReactLenis>
           {/* </Providers> */}
         </body>
