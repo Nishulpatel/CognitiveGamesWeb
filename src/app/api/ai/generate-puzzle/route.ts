@@ -32,3 +32,26 @@
 //     return NextResponse.json({ error: "Server error generating puzzle" }, { status: 500 });
 //   }
 // }
+
+import { NextRequest, NextResponse } from "next/server";
+
+export async function POST(req: NextRequest) {
+  try {
+    const body = await req.json();
+
+    const dummyPuzzle = {
+      id: 1,
+      question: "What comes next? ➕, ⭕, △, ...",
+      options: ["◻️", "⬛", "⭐", "⬤"],
+      answer: "⬤",
+    };
+
+    return NextResponse.json({ success: true, puzzle: dummyPuzzle });
+  } catch (error) {
+    return NextResponse.json(
+      { success: false, error: "Failed to generate puzzle." },
+      { status: 500 }
+    );
+  }
+}
+
