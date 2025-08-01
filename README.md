@@ -10,24 +10,22 @@ Cognitive Games is a web platform designed to help students and job-seekers prep
 
 It may look like a simple puzzle site — but under the hood, it challenges your brain using:
 
-- 🔁 Backtracking  
-- 🧩 2D Matrix Logic  
-- #️⃣ Hashing  
-- ⚡ Greedy Approach  
+- Backtracking  
+- 2D Matrix Logic  
+- Hashing  
+- Greedy Approach  
 
 ## ✅ Features
 
-- 🧠 2 logic-based games (more coming soon)  
-- 🧪 Real placement-style puzzles  
-- 📱 Responsive & fast UI
+- 2 logic-based games (more coming soon)  
+- Real placement-style puzzles  
+- Responsive & fast UI
 
 ## 🛠️ Tech Stack
 
-- **Next.js** (App Router)
+- **Next.js** 
 - **TypeScript**
 - **Tailwind CSS**
-- **ShadCN UI**
-- **Lucide Icons**
 
 
 ## 🧪 Try it out
