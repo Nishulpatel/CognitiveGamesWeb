@@ -1,9 +1,8 @@
 # 🧠 Cognitive Games
 
 > Practice game-based hiring rounds used by companies like **Capgemini** and **Cognizant**.
+> 
 ![1753907492838](https://github.com/user-attachments/assets/5a837129-9a4d-40c1-bd3d-6e16c6fde03d)
-
-🎮 Live: [games.nishul.dev](https://games.nishul.dev)
 
 ## 🚀 Overview
 
