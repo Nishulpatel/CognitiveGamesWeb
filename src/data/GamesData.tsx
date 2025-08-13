@@ -7,13 +7,7 @@ export interface GameCardData {
 }
 
 export const gameCards: GameCardData[] = [
-  {
-    id: 1,
-    name: "Deductive Challenge",
-    image: "/games/DeductiveChallenge.jpeg",
-    rulesLink: "/rules/deductive-challenge",
-    description:"mental or logical puzzle that tests deductive reasoning ability, your skill in drawing specific conclusions based on general rules or facts."
-  },
+
    {
     id: 2,
     name: "Swich Challenge",
@@ -21,6 +15,13 @@ export const gameCards: GameCardData[] = [
 
     rulesLink: "/rules/Swith-challenge",
     description:"A fast-paced game where you match color names with their actual displayed colors, testing speed and focus under tricky visual cues."
+  },
+    {
+    id: 1,
+    name: "Deductive Challenge",
+    image: "/games/DeductiveChallenge.jpeg",
+    rulesLink: "/rules/deductive-challenge",
+    description:"mental or logical puzzle that tests deductive reasoning ability, your skill in drawing specific conclusions based on general rules or facts."
   },
    {
     id: 3,

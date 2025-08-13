@@ -6,9 +6,10 @@ import Container from "@/components/common/Container";
 import GamePage from "@/components/common/GamePage";
 import SwitchChallengeUI from "@/components/games/SwitchChallengeUI";
 import { formatTime } from "@/utils/gameUtils";
+import Music from "@/components/common/music";
 
-const TIME_PER_QUESTION = 20;
-const SESSION_TIME = 360; // 6 min
+const TIME_PER_QUESTION = 30;
+const SESSION_TIME = 180;
 
 export default function SwitchChallenge() {
   const [level, setLevel] = useState(1);
@@ -74,6 +75,7 @@ export default function SwitchChallenge() {
 
   return (
     <Container>
+      
       <GamePage title="Switch Operator Challenge" level={level} timer={formatTime(sessionTime)}>
         <SwitchChallengeUI
           puzzle={puzzle}
