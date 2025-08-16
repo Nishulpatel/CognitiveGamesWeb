@@ -1,4 +1,3 @@
-// components/music.tsx
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
@@ -9,7 +8,7 @@ export default function Music() {
 
   useEffect(() => {
     if (!audioRef.current) {
-      audioRef.current = new Audio("/audio/game.mp3"); 
+      audioRef.current = new Audio("/music/game.mp3"); 
       audioRef.current.loop = true;
     }
   }, []);
